@@ -23,7 +23,7 @@ The `sfomuseum_airfield.wasm` WASM binary exports the following methods with ret
 
 ### sfomuseum_lookup_airport
 
-Return a list of SFO Museum airport records matching an IATA or ICAO airport code.
+Return a JSON-encoded list of [sfomuseum/go-sfomuseum-airfield/airports/sfomuseum.Airport](https://github.com/sfomuseum/go-sfomuseum-airfield/blob/main/airports/sfomuseum/airport.go#L11) records matching an IATA or ICAO airport code.
 
 ```
 	sfomuseum_lookup_airport("KSFO")
@@ -34,7 +34,7 @@ Data is sourced from [sfomuseum-data/sfomuseum-data-whosonfirst](https://github.
 
 ### sfomuseum_lookup_airline
 
-Return a list of SFO Museum airline records matching an IATA or ICAO airport code.
+Returns a JSON-encoded list of [sfomuseum/go-sfomuseum-airfield/airlines/sfomuseum.Airline](https://github.com/sfomuseum/go-sfomuseum-airfield/blob/main/airlines/sfomuseum/airline.go#L11) records matching an IATA or ICAO airport code.
 
 ```
 	sfomuseum_lookup_airline("AFR")
@@ -45,7 +45,7 @@ Data is sourced from [sfomuseum-data/sfomuseum-data-enterprise](https://github.c
 
 ### sfomuseum_lookup_aircraft
 
-Return a list of SFO Museum airline records matching a ICAO aircraft desginator.
+Return a JSON-encoded list of [sfomuseum/go-sfomuseum-airfield/aircraft/sfomuseum.Aircraft](https://github.com/sfomuseum/go-sfomuseum-airfield/blob/main/aircraft/sfomuseum/aircraft.go#L11) records matching an ICAO aircraft desginator.
 
 ```
 	sfomuseum_lookup_aircraft("B747")
