@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/aaronland/go-http-static v0.0.3
 	github.com/sfomuseum/go-http-wasm/v2 v2.0.0
-	github.com/sfomuseum/go-sfomuseum-airfield v0.6.3
+	github.com/sfomuseum/go-sfomuseum-airfield v0.6.4
 )
 
 require (
