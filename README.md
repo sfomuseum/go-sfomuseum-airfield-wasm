@@ -11,7 +11,7 @@ $> make wasm
 GOOS=js GOARCH=wasm go build -mod vendor -ldflags="-s -w" -o static/wasm/sfomuseum_airfield.wasm cmd/lookup/main.go
 ```
 
-This will create a new WASM binary in the `static/wasm` folder.
+This will create a new WASM binary in the `static/wasm` folder. The WASM binary, as written, is very large (11MB) which means it may be prohibitive for any kind of production, interet-facing use. This is particularly true considering that it is possible to compile a static lookup table and query it directly in JavaScript at a fraction of the size of the WASM binary. These are all "known knowns" but WASM binaries continue to be exciting and useful for a variety of reasons and, eventually, some day the binaries won't be so big.
 
 In order to use the WASM binary in your JavaScript you will need to include the `wasm_exec.js` library that is packaged with the Go programming language. You can also grab a copy from the [sfomuseum/go-http-wasm](https://github.com/sfomuseum/go-http-wasm/blob/main/static/javascript/wasm_exec.js) package.
 
