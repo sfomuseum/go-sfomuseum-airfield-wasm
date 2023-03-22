@@ -13,7 +13,9 @@ GOOS=js GOARCH=wasm go build -mod vendor -ldflags="-s -w" -o static/wasm/sfomuse
 
 This will create a new WASM binary in the `static/wasm` folder.
 
-In order to use the WASM binary in your JavaScript you will need to include the `wasm_exec.js` library that is packaged with the Go programming language. You can also grab a copy from the [sfomuseum/go-http-wasm](https://github.com/sfomuseum/go-http-wasm/blob/main/static/javascript/wasm_exec.js) package. For details on how to work with the `wasm_exec.js` library please consult the [Go WebAssembly wiki page](https://github.com/golang/go/wiki/WebAssembly).
+In order to use the WASM binary in your JavaScript you will need to include the `wasm_exec.js` library that is packaged with the Go programming language. You can also grab a copy from the [sfomuseum/go-http-wasm](https://github.com/sfomuseum/go-http-wasm/blob/main/static/javascript/wasm_exec.js) package.
+
+For details on how to work with the `wasm_exec.js` library please consult the [Go WebAssembly wiki page](https://github.com/golang/go/wiki/WebAssembly) or take a look at the [convenience wrapper library](https://github.com/sfomuseum/go-http-wasm/blob/main/static/javascript/sfomuseum.wasm.js) included with the `sfomuuseum/go-http-wasm` package.
 
 ## Functions
 
