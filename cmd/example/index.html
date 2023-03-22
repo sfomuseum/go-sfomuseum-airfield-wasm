@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>go-sfomuseum-airfield-wasm</title>
+    <link rel="stylesheet" type="text/css" href="example.css" />
+    <script type="text/javascript" src="example.init.js"></script>
+    <!-- remember that other javascript files (including wasm_exec.js are appended at runtime by Go middleware -->
+  </head>
+
+  <body>
+      <h3>SFO Museum Airfield Lookup Tool</h3>
+      
+      <div id="container">
+	  <div>
+	      <h4>Lookup an airport</h4>
+	      <form>
+		  <input type="text" id="airport_code" />
+		  <button type="submit" disabled="disabled" id="airport_code_button">Lookup</button>
+		  <label for="airport_code">Search for an IATA or ICAO airport identifier</label>
+	      </form>
+
+	      <h4>Lookup an airline</h4>
+	      <form>
+		  <input type="text" id="airline_code" />
+		  <button type="submit" disabled="disabled" id="airline_code_button">Lookup</button>
+		  <label for="airport_code">Search for an IATA or ICAO airline identifier</label>		  
+	      </form>
+
+	      <h4>Lookup an aircraft</h4>
+	      <form>
+		  <input type="text" id="aircraft_code" />
+		  <button type="submit" disabled="disabled" id="aircraft_code_button">Lookup</button>
+		  <label for="airport_code">Search for an IATA or ICAO aircraft identifier</label>		  		  
+	      </form>
+	      
+	  </div>
+	  <div>
+	      <pre id="results"></pre>
+	  </div>
+	  
+      </div>
+  </body>
+</html>

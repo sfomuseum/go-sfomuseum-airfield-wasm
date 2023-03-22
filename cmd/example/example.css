@@ -1,0 +1,36 @@
+body {
+
+}
+
+label {
+	display: block;
+	font-family: sans-serif;
+	font-size: small;
+	color: #666;
+	margin-top:.5rem;
+}
+
+#container {
+	display:grid;
+        grid-template-columns: .5fr 1.5fr;
+}
+
+#container div {
+	height:100vh;
+	padding:.5rem;
+}
+
+#container div pre {
+	height:80vh;
+	border:solid thin;
+	overflow: scroll;
+}
+
+#submit {
+	display:block;
+	float:right;
+}
+
+#feedback {
+	padding: 1rem;
+}
